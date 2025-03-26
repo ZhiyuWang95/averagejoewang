@@ -1,185 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joe Wang - Portfolio</title>
-  <style>
-    /* Simple CSS styling */
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-    }
-
-    h1, h2, h3 {
-      color: #007bff;
-    }
-
-    .education-section {
-  font-family: "Georgia", serif;
-  padding: 20px;
-  border-left: 4px solid #6c63ff;
-  background-color: #f9f9f9;
-  margin-bottom: 40px;
-}
-
-.education-section h2 {
-  font-size: 1.8em;
-  border-bottom: 2px solid #6c63ff;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.school {
-  margin-bottom: 30px;
-}
-
-.school-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.school-logo {
-  width: 60px;
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 5px;
-}
-
-.school-info {
-  flex: 1;
-}
-
-.school-header h3 {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-.location {
-  font-weight: normal;
-  font-size: 0.95em;
-  color: #555;
-  margin-left: 10px;
-}
-
-.date {
-  font-size: 0.95em;
-  color: #777;
-}
-
-.degree, .gpa, .coursework {
-  margin: 5px 0;
-  font-size: 0.95em;
-  color: #333;
-}
-
-
-    .project {
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .project h3 {
-      margin-top: 0;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
-    <a href="home.html">⬅️ Back to Home</a>
-    
-    <header>
-      <h1>Zhiyu (Joe) Wang</h1>
-      <div class="contact-info">
-        <p>Cell: (857) 869-4147</p>
-        <p>Email: joe.zhiyuwang@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/zhiyu-wang-joey/">linkedin.com/in/zhiyu-wang-joey/</a></p>
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title">The Average Joe <span class="highlight-average">Wang's</span> Resume</h1>
+        <nav class="site-nav">
+          <a href="home.html">Home</a>
+          <a href="joe-wang-portfolio.html">Resume</a>
+          <a href="notes.html">Study Notes</a>
+          <a href="interests.html">Interests</a>
+        </nav>
       </div>
     </header>
 
-    <div class="section">
-      <h2>Work Experience</h2>
-      <div class="project">
-        <img src="materials/resume/adobefirefly-color.png" alt="Adobe Firefly Logo" style="width: 100px; height: auto; float: right; margin-left: 15px;">
-        <h3>Machine Learning Engineer, Adobe</h3>
-        <p>March 2025 - Present</p>
-        <h4>Adobe Firefly</h4>
-        <ul>
-          <li>Adobe Firefly Inference Platform Team</li>
-        </ul>
+    <section class="contact-section">
+      <h1 class="name-title">Zhiyu (Joe) Wang</h1>
+      <div class="contact-info">
+        <p><strong>Cell:</strong> (857) 869-4147</p>
+        <p><strong>Email:</strong> <a href="mailto:joe.zhiyuwang@gmail.com">joe.zhiyuwang@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/zhiyu-wang-joey/" target="_blank">
+            linkedin.com/in/zhiyu-wang-joey/
+          </a>
+        </p>
       </div>
-      <div class="project">
-        <img src="materials/resume/aws.png" alt="AWS Logo" style="width: 100px; height: auto; float: right; margin-left: 15px;">
-        <h3>Software Development Engineer, AWS</h3>
-        <p>April 2024 - March 2025</p>
-        <h4>Amazon Translate</h4>
-        <ul>
-          <li>Led the build of core Machine translate inference image upgrading. Led the complete process of key dependencies upgrading, including Pytorch, CUDA, etc; new image accuracy test and performance load test; production deployment.</li>
-          <li>Co-Mentored intern to conduct proof of concept project that leverages Amazon Bedrock for Machine translation.</li>
-          <li>Co-led expanding Amazon Translate into new AWS regions.</li>
-        </ul>
-        <h4>Amazon Bedrock</h4>
-        <ul>
-          <li>Contributed to the launch of the batch inference for Amazon Bedrock, taking ownership of key components and workflows, including batch prompt preprocessing, ensuring efficient and secure operations.</li>
-          <li>Led the provisioned throughput metrics dashboard initiation and design. Contributed to the implementation of metrics emitting, aggregating, and presentation of provisioned throughput resources utilization. The clear and accurate data points provided by the project serves as the single sources of truth for GPU resource tracking and cost metering.</li>
-        </ul>
-      </div>
-      <div class="project">
-        <img src="materials/resume/amazon.png" alt="Amazon Logo" style="width: 100px; height: auto; float: right; margin-left: 15px;">
-        <h3>Software Development Engineer, Amazon</h3>
-        <p>April 2021 - Present</p>
-        <ul>
-          <li>Led the development of an internal-facing web application for processing, exchanging, and presenting financial data to facilitate cost planning and budgeting for fulfillment centers.</li>
-          <li>Spearheaded the design of key components and unified the architecture to support the expansion of the product to cover various financial use cases, including capital expense, operational expenses, real estate and more.</li>
-          <li>Led a performance optimization initiative, reducing complex calculation execution times by applying parallel processing and migrating to a serverless query engine, cutting end-to-end duration from 2 hours to 5 minutes.</li>
-          <li>Innovated and led the enhancement of inter-system data exchange functionality, improving data export flexibility and reducing processing time from 3 hours to under 10 minutes.</li>
-          <li>Served as Scrum Master, driving Agile practices in daily events, resulting in a 50% increase in team velocity in 6 months.</li>
-        </ul>
-      </div>
-      <div class="project">
-        <img src="materials/resume/digi_int.png" alt="Digi Logo" style="width: 100px; height: auto; float: right; margin-left: 15px;">
-        <h3>Software Engineer, Digi International</h3>
-        <p>July 2019 - April 2021</p>
-        <ul>
-          <li>Worked in a team of 10 building Linux based transportation router network systems.</li>
-          <li>Contributed to both low-level firmware features such as Hotspot, Cellular connection failover, GPS; And user-facing components in route WebUIs and Command line interfaces.</li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
-    <div class="education-section">
+
+    <section class="section work-experience">
+      <h2>Work Experience</h2>
+
+      <!-- Adobe -->
+      <div class="project">
+        <img src="materials/resume/adobefirefly-color.png" alt="Adobe Firefly Logo" class="project-logo" />
+        <div class="project-content">
+          <h3>Machine Learning Engineer, Adobe</h3>
+          <p class="date">March 2025 – Present</p>
+          <h4>Adobe Firefly</h4>
+          <ul>
+            <li>Adobe Firefly Inference Platform Team</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AWS -->
+      <div class="project">
+        <img src="materials/resume/aws.png" alt="AWS Logo" class="project-logo" />
+        <div class="project-content">
+          <h3>Software Development Engineer, AWS</h3>
+          <p class="date">April 2024 – March 2025</p>
+
+          <h4>Amazon Translate</h4>
+          <ul>
+            <li>Led the upgrade of core Machine Translation inference image stack: upgraded PyTorch, CUDA, tested
+              accuracy, and deployed to production.</li>
+            <li>Co-mentored an intern to explore Amazon Bedrock as a PoC for Machine Translation.</li>
+            <li>Co-led expansion of Amazon Translate into new AWS regions.</li>
+          </ul>
+
+          <h4>Amazon Bedrock</h4>
+          <ul>
+            <li>Owned and launched batch inference components, including batch prompt preprocessing workflows.</li>
+            <li>Initiated and helped build the GPU resource dashboard, centralizing provisioning metrics and enabling
+              cost tracking via single source of truth.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Amazon -->
+      <div class="project">
+        <img src="materials/resume/amazon.png" alt="Amazon Logo" class="project-logo" />
+        <div class="project-content">
+          <h3>Software Development Engineer, Amazon</h3>
+          <p class="date">April 2021 – April 2024</p>
+          <ul>
+            <li>Built internal tools to process and present financial data for fulfillment cost planning.</li>
+            <li>Unified architecture to support expansion into capex, opex, and real estate workflows.</li>
+            <li>Optimized performance by applying parallelism and moving to serverless queries—cutting runtime from 2h
+              to 5m.</li>
+            <li>Enhanced data exchange and export, reducing time from 3h to under 10m.</li>
+            <li>Scrum Master: drove agile rituals, improving team velocity by 50% in 6 months.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Digi -->
+      <div class="project">
+        <img src="materials/resume/digi_int.png" alt="Digi Logo" class="project-logo" />
+        <div class="project-content">
+          <h3>Software Engineer, Digi International</h3>
+          <p class="date">July 2019 – April 2021</p>
+          <ul>
+            <li>Worked on embedded Linux-based router systems in a 10-person team.</li>
+            <li>Contributed to firmware features (Hotspot, Failover, GPS) and WebUIs / CLI tooling.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="education-section">
       <h2>Education</h2>
-    
+
       <div class="school">
         <div class="school-header">
           <img src="materials/resume/Boston_University.png" alt="Boston University Logo" class="school-logo">
-          <h3>Boston University <span class="location">— Boston, MA</span></h3>
-          <span class="date">Sep 2017 – May 2019</span>
+          <div>
+            <h3>Boston University <span class="location">— Boston, MA</span></h3>
+            <span class="date">Sep 2017 – May 2019</span>
+          </div>
         </div>
         <p class="degree">MSc in Electrical and Computer Engineering, Graduate with Intern Practice</p>
         <p class="gpa">GPA: 3.60</p>
-        <p class="coursework"><strong>Coursework:</strong> Data Structures and Algorithms, Object-Oriented Programming, Embedded Systems, Computer Networks, Advanced Database Systems, Artificial Intelligence, Digital Image Processing</p>
+        <p class="coursework"><strong>Coursework:</strong> Data Structures and Algorithms, Object-Oriented Programming,
+          Embedded Systems, Computer Networks, Advanced Database Systems, Artificial Intelligence, Digital Image
+          Processing</p>
       </div>
-    
+
       <div class="school">
         <div class="school-header">
           <h3>Wuhan University of Technology <span class="location">— Hubei, China</span></h3>
@@ -188,25 +135,27 @@
         <p class="degree">BEng in Automation, Excellent Graduate Award, Top 5% of Graduates</p>
         <p class="gpa">GPA: 3.67</p>
       </div>
-    </div>
-    
+    </section>
 
-    <div class="section">
+    <section class="section skills-section">
       <h2>Skills</h2>
-      <ul>
-        <li>Programming Languages: Java, Python, C/C++, SQL, Bash, TypeScript, C#</li>
-        <li>Databases: AWS DynamoDB, AWS redshift, MySQL, MongoDB, PostgreSQL</li>
-        <li>Technologies/Frameworks: AWS Lambda, Amazon Quicksight, Sagemaker, S3, Glue, Athena, CloudWatch, Docker, Bedrock, boto3, GoogleGuice, Dagger, JupyterNotebook, Git</li>
+      <ul class="skill-list">
+        <li><strong>Programming Languages:</strong> Java, Python, C/C++, SQL, Bash, TypeScript, C#</li>
+        <li><strong>Databases:</strong> AWS DynamoDB, AWS Redshift, MySQL, MongoDB, PostgreSQL</li>
+        <li><strong>Technologies / Frameworks:</strong> AWS Lambda, Amazon Quicksight, SageMaker, S3, Glue, Athena,
+          CloudWatch, Docker, Bedrock, boto3, Google Guice, Dagger, Jupyter Notebook, Git</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section certifications-section">
       <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Solutions Architect – Associate, Issued June 2022, Expires June 2025</li>
-        <li>Supervised Machine Learning: Regression and Classification, Issued August 2024</li>
+      <ul class="cert-list">
+        <li>AWS Certified Solutions Architect – Associate (Issued June 2022, Expires June 2025)</li>
+        <li>Supervised Machine Learning: Regression and Classification (Issued August 2024)</li>
       </ul>
-    </div>
+    </section>
+
   </div>
 </body>
+
 </html>
