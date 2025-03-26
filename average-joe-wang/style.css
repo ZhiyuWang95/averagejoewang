@@ -337,5 +337,50 @@ body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #3
       .skill-list strong {
         color: #2c2c2c;
       }
+
+      .interests-section {
+        font-family: 'Georgia', serif;
+        margin-bottom: 60px;
+        padding: 30px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      }
+      
+      .interests-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #2c2c2c;
+      }
+      
+      .interests-section p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      .interest-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 25px;
+      }
+      
+      .interest-list li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        color: #444;
+      }
+      
+      .back-link a {
+        font-size: 0.95rem;
+        color: #555;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      
+      .back-link a:hover {
+        color: #2a2a2a;
+        text-decoration: underline;
+      }
       
       
