@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>T.A.J.W | Interests</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style-old-shanghai.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
@@ -26,12 +26,57 @@
     <h2>Personal Interests</h2>
     <p>A little about what I enjoy outside of work and study:</p>
 
-    <ul class="interest-list">
-      <li><strong>📷 Photography</strong> – I love capturing candid moments, natural light, and scenic landscapes.</li>
-      <li><strong>✈️ Travel</strong> – Exploring new cultures, cuisines, and architecture always inspires me.</li>
-      <li><strong>📚 Reading</strong> – I'm drawn to non-fiction, sci-fi, and books on emerging technologies.</li>
-    </ul>
+    <div class="course-section-blog">
+      <strong>📷 Photography</strong> – I love capturing candid moments, natural light, and scenic landscapes.
 
+      <div class="polaroid-scroll-container">
+        <div class="polaroid-wrapper">
+          <label for="expand-cherry-photo">
+            <div class="polaroid">
+              <img src="./materials/interests/photos/cherryblossom-adobe-campus.jpg" alt="Cherry Blossom">
+              <div class="caption">Cherryblossom at Adobe Campus 03/26/2025</div>
+            </div>
+          </label>
+          <input type="checkbox" id="expand-cherry-photo" class="lightbox-toggle">
+          <label for="expand-cherry-photo" class="lightbox">
+            <img src="./materials/interests/photos/cherryblossom-adobe-campus.jpg" alt="Cherry Blossom Expanded">
+          </label>
+        </div>
+        <div class="polaroid-wrapper">
+          <label for="expand-campus-photo">
+            <div class="polaroid">
+              <img src="./materials/interests/photos/campus.jpeg" alt="Campus">
+              <div class="caption">Day 1 at Adobe Campus 03/06/2025</div>
+            </div>
+          </label>
+          <input type="checkbox" id="expand-campus-photo" class="lightbox-toggle">
+          <label for="expand-campus-photo" class="lightbox">
+            <img src="./materials/interests/photos/campus.jpeg" alt="Campus Expanded">
+          </label>
+        </div>
+        <div class="polaroid-wrapper">
+          <label for="expand-cougar-photo">
+            <div class="polaroid">
+              <img src="./materials/interests/photos/cougar_mt.jpeg" alt="waterfall">
+              <div class="caption">Cougar Mt - Coal Creek Falls 03/01/2025</div>
+            </div>
+          </label>
+          <input type="checkbox" id="expand-cougar-photo" class="lightbox-toggle">
+          <label for="expand-cougar-photo" class="lightbox">
+            <img src="./materials/interests/photos/cougar_mt.jpeg" alt="waterfall Expanded">
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="course-section-blog">
+      <strong>✈️ Travel</strong> – Exploring new cultures, cuisines, and architecture always inspires me.
+    </div>
+
+    <div class="course-section-blog">
+      <strong>📚 Reading</strong> – I'm drawn to non-fiction, sci-fi, and books on emerging technologies.
+    </div>
     <p class="back-link">
       <a href="home.html">⬅️ Back to Home</a>
     </p>

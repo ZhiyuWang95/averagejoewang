@@ -1,0 +1,554 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    main { padding: 2rem; max-width: 800px; margin: auto; background: #fff; }
+    footer { text-align: center; padding: 1rem 0; font-size: 0.8rem; color: #777; }
+    .btn { display: inline-block; margin-top: 1rem; padding: 10px 20px; background: #333; color: #fff; text-decoration: none; border-radius: 5px; }
+    .site-header {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  font-family: 'Georgia', serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-title {
+  font-size: 1.6em;
+  color: #2c2c2c;
+  margin: 0;
+  flex: 1;
+}
+
+.site-nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #2a2a2a;
+  text-shadow: 0 0 1px rgba(0, 112, 243, 0.3);
+}
+
+
+.highlight-average {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+}
+
+
+.course-section-blog {
+    font-family: 'Georgia', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  .course-section-blog h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .module-entry {
+    margin-bottom: 40px;
+  }
+  
+  .module-entry h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .chapter-highlights {
+    list-style: disc inside;
+    padding-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .module-entry p {
+    margin: 10px 0;
+  }
+  
+  .module-entry a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .module-entry a:hover {
+    text-decoration: underline;
+  }
+
+  .education-section {
+    font-family: "Georgia", serif;
+    padding: 20px;
+    border-left: 4px solid #6c63ff;
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+  }
+  
+  .education-section h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #6c63ff;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .school {
+    margin-bottom: 30px;
+  }
+  
+  .school-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .school-logo {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  
+  .school-info {
+    flex: 1;
+  }
+  
+  .school-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .location {
+    font-weight: normal;
+    font-size: 0.95em;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  .date {
+    font-size: 0.95em;
+    color: #777;
+  }
+  
+  .degree, .gpa, .coursework {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #333;
+  }
+  
+  
+      .project {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+  
+      .project h3 {
+        margin-top: 0;
+      }
+  
+      .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+
+      .contact-section {
+        font-family: 'Georgia', serif;
+        background-color: #fff;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #eee;
+        color: #333;
+      }
+      
+      .name-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #2c2c2c;
+      }
+      
+      .contact-info {
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+      
+      .contact-info a {
+        color: #555;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      
+      .contact-info a:hover {
+        color: #2a2a2a;
+        text-decoration: underline;
+      }
+
+      .work-experience {
+        font-family: 'Georgia', serif;
+        margin-bottom: 60px;
+      }
+      
+      .project {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      
+      .project-logo {
+        width: 80px;
+        height: auto;
+        flex-shrink: 0;
+        margin-top: 5px;
+      }
+      
+      .project-content {
+        flex: 1;
+      }
+      
+      .project h3 {
+        font-size: 1.2rem;
+        margin: 0 0 5px;
+        color: #2c2c2c;
+      }
+      
+      .project .date {
+        font-size: 0.95rem;
+        color: #777;
+        margin-bottom: 10px;
+      }
+      
+      .project h4 {
+        font-size: 1rem;
+        margin: 15px 0 5px;
+        color: #444;
+      }
+      
+      .project ul {
+        margin: 0 0 10px 20px;
+        padding: 0;
+        list-style-type: disc;
+      }
+      
+      .project ul li {
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+        color: #333;
+      }
+
+      .education-section {
+        font-family: 'Georgia', serif;
+        margin-bottom: 50px;
+      }
+      
+      .school {
+        margin-bottom: 30px;
+      }
+      
+      .school-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+      }
+      
+      .school-logo {
+        width: 60px;
+        height: auto;
+        margin-top: 5px;
+      }
+      
+      .school-header h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #2c2c2c;
+      }
+      
+      .location {
+        font-weight: normal;
+        font-size: 0.95em;
+        color: #555;
+        margin-left: 10px;
+      }
+      
+      .date {
+        display: block;
+        font-size: 0.95em;
+        color: #777;
+        margin-top: 5px;
+      }
+      
+      .degree,
+      .gpa,
+      .coursework {
+        font-size: 0.95em;
+        color: #333;
+        margin: 5px 0;
+      }
+      
+      .skills-section,
+      .certifications-section {
+        font-family: 'Georgia', serif;
+        margin-bottom: 50px;
+      }
+      
+      .skills-section ul,
+      .certifications-section ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        font-size: 0.95em;
+        color: #333;
+      }
+      
+      .skills-section li,
+      .certifications-section li {
+        margin-bottom: 8px;
+      }
+      
+      .skill-list strong {
+        color: #2c2c2c;
+      }
+
+      .interests-section {
+        font-family: 'Georgia', serif;
+        margin-bottom: 60px;
+        padding: 30px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      }
+      
+      .interests-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #2c2c2c;
+      }
+      
+      .interests-section p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      .interest-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 25px;
+      }
+      
+      .interest-list li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        color: #444;
+      }
+      
+      .back-link a {
+        font-size: 0.95rem;
+        color: #555;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      
+      .back-link a:hover {
+        color: #2a2a2a;
+        text-decoration: underline;
+      }
+      
+      
+
+
+/* === Old Shanghai Style Theme Additions === */
+body {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  background-color: #f8f5f0;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+.site-header, .section, .education-section, .skills-section, .certifications-section, .interests-section, .work-experience {
+  background-color: #faf8f3;
+  border: 1px solid #e3dccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+h1, h2, h3, h4 {
+  color: #3e2f1c;
+  font-weight: 600;
+}
+
+a {
+  color: #8c5a2f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #5a3b1e;
+  text-decoration: underline;
+}
+
+.project-logo, .school-logo {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.polaroid {
+  width: 250px;
+  padding: 10px 10px 30px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 1.3em;
+  color: #555;
+}
+
+
+
+.polaroid-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.polaroid {
+  width: 250px;
+  padding: 10px 10px 30px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 1.3em;
+  color: #555;
+}
+
+/* Lightbox effect */
+.lightbox-toggle {
+  display: none;
+}
+
+.lightbox-toggle:checked + .lightbox {
+  display: flex;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+.lightbox:after {
+  content: '✕';
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+  .polaroid-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .polaroid-wrapper {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  /* Optional: add smooth scroll on mobile/trackpad */
+  .polaroid-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .polaroid-scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+
+  .polaroid-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .polaroid img {
+    height: 200px; /* or whatever fixed height you prefer */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
