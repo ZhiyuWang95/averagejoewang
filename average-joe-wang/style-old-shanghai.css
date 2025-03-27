@@ -552,3 +552,28 @@ a:hover {
     object-fit: cover;
     border-radius: 4px;
   }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .contact-info a {
+    word-break: break-word;
+    color: #0073b1; /* optional styling */
+    text-decoration: none;
+  }
+
+  @media (min-width: 600px) {
+    .contact-info {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-info p {
+      margin: 0;
+    }
+  }
