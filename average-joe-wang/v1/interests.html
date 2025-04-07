@@ -7,13 +7,15 @@
   <title>T.A.J.W | Interests</title>
   <link rel="stylesheet" href="./style-old-shanghai.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="./materials/icons8-avengers-32.png" type="image/x-icon" />
+  <link rel="icon" href="https://s3.us-west-2.amazonaws.com/avgjoewang.com/materials/icons8-avengers-32.png"
+    type="image/x-icon" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-container">
-      <h1 class="site-title">The Average Joe <span class="highlight-average">Wang's</span> Interests</h1>
+      <h1 class="site-title">The Average Joe <a href="https://en.wikipedia.org/wiki/Wang_(surname)"><span
+            class="highlight-average">Wang's</span></a> Interests</h1>
       <nav class="site-nav">
         <a href="home.html">Home</a>
         <a href="joe-wang-portfolio.html">Resume</a>
@@ -31,6 +33,18 @@
       <strong>📷 Photography</strong> – I love capturing candid moments, natural light, and scenic landscapes.
 
       <div class="polaroid-scroll-container">
+        <div class="polaroid-wrapper">
+          <label for="expand-starbucks_reserve">
+            <div class="polaroid">
+              <img src="./materials/interests/photos/starbucks_reserve.jpeg" alt="starbucks_reserve">
+              <div class="caption">Starbucks reservce 03/29/2025</div>
+            </div>
+          </label>
+          <input type="checkbox" id="expand-starbucks_reserve" class="lightbox-toggle">
+          <label for="expand-starbucks_reserve" class="lightbox">
+            <img src="./materials/interests/photos/starbucks_reserve.jpeg" alt="starbucks_reserve Expanded">
+          </label>
+        </div>
         <div class="polaroid-wrapper">
           <label for="expand-cherry-photo">
             <div class="polaroid">
@@ -77,6 +91,10 @@
 
     <div class="course-section-blog">
       <strong>📚 Reading</strong> – I'm drawn to non-fiction, sci-fi, and books on emerging technologies.
+      <a href="./reading/a_random_walk_down_wall_street.html">
+        <img class="book-cover" src="./materials/interests/reading/random_walk_down_wall_street.jpg"
+          alt="Books Image" />
+      </a>
     </div>
     <p class="back-link">
       <a href="home.html">⬅️ Back to Home</a>
