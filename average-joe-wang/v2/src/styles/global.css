@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Caveat&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+  background-color: #f8f5f0;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+a {
+  color: #8c5a2f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #5a3b1e;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  color: #3e2f1c;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,147 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background-color: #faf8f3;
+  border: 1px solid #e3dccc;
+  border-radius: 10px;
+  padding: 28px 32px;
+  font-family: 'Georgia', serif;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+.name {
+  font-size: 2rem;
+  color: #3e2f1c;
+  margin: 0 0 16px;
+}
+
+.contactRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.contactRow p { margin: 0; }
+
+.contactRow a {
+  color: #8c5a2f;
+  text-decoration: none;
+}
+
+.contactRow a:hover { text-decoration: underline; }
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #3e2f1c;
+  margin: 0 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e3dccc;
+}
+
+/* Jobs */
+.job {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.job:last-child { margin-bottom: 0; }
+
+.logo {
+  width: 72px;
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.jobContent { flex: 1; }
+
+.jobRole {
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  margin: 0 0 4px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0 0 8px;
+}
+
+.teamName {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 12px 0 4px;
+}
+
+.bullets {
+  margin: 0 0 8px 20px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.bullets li {
+  margin-bottom: 5px;
+  font-size: 0.92rem;
+  color: #333;
+}
+
+/* Education */
+.school { margin-bottom: 28px; }
+.school:last-child { margin-bottom: 0; }
+
+.schoolHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.schoolLogo {
+  width: 56px;
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.schoolName {
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.location {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.degree, .gpa, .coursework {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 4px 0;
+}
+
+/* Skills / Certs */
+.list {
+  list-style: disc;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  color: #333;
+}

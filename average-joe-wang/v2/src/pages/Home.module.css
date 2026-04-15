@@ -1,0 +1,32 @@
+.card {
+  background-color: #faf8f3;
+  border: 1px solid #e3dccc;
+  border-radius: 10px;
+  padding: 40px 36px;
+  font-family: 'Georgia', serif;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #3e2f1c;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 22px;
+  background-color: #8c5a2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #5a3b1e;
+}
