@@ -43,12 +43,29 @@ export default function Resume() {
             <img src={job.logoUrl} alt={`${job.company} logo`} className={styles.logo} />
             <div className={styles.jobContent}>
               <h3 className={styles.jobRole}>
-                {job.role}, {job.company}
+                {job.role},{" "}
+                {job.companyUrl ? (
+                  <a href={job.companyUrl} target="_blank" rel="noreferrer">
+                    {job.company}
+                  </a>
+                ) : (
+                  job.company
+                )}
               </h3>
               <p className={styles.date}>{job.dateRange}</p>
               {job.teams.map((team, i) => (
                 <div key={i}>
-                  {team.name && <h4 className={styles.teamName}>{team.name}</h4>}
+                  {team.name && (
+                    <h4 className={styles.teamName}>
+                      {team.url ? (
+                        <a href={team.url} target="_blank" rel="noreferrer">
+                          {team.name}
+                        </a>
+                      ) : (
+                        team.name
+                      )}
+                    </h4>
+                  )}
                   <ul className={styles.bullets}>
                     {team.bullets.map((b, j) => (
                       <li key={j}>{b}</li>
@@ -70,7 +87,13 @@ export default function Resume() {
               <img src={school.logoUrl} alt={`${school.name} logo`} className={styles.schoolLogo} />
               <div>
                 <h3 className={styles.schoolName}>
-                  {school.name}{" "}
+                  {school.url ? (
+                    <a href={school.url} target="_blank" rel="noreferrer">
+                      {school.name}
+                    </a>
+                  ) : (
+                    school.name
+                  )}{" "}
                   <span className={styles.location}>— {school.location}</span>
                 </h3>
                 <span className={styles.date}>{school.dateRange}</span>
@@ -102,7 +125,18 @@ export default function Resume() {
         <h2 className={styles.sectionTitle}>Certifications</h2>
         <ul className={styles.list}>
           {certifications.map((cert, i) => (
-            <li key={i}>{cert}</li>
+            <li key={i}>
+              {cert.url ? (
+                <a href={cert.url} target="_blank" rel="noreferrer">
+                  {cert.name}
+                </a>
+              ) : (
+                cert.name
+              )}
+              {" — "}<em>{cert.issuer}</em>
+              {" · Issued "}{cert.issued}
+              {cert.expires && <span className={styles.expired}> · Expired {cert.expires}</span>}
+            </li>
           ))}
         </ul>
       </section>

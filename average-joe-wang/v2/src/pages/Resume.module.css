@@ -134,6 +134,11 @@
 }
 
 /* Skills / Certs */
+.expired {
+  color: #999;
+  font-style: italic;
+}
+
 .list {
   list-style: disc;
   margin: 0 0 0 20px;

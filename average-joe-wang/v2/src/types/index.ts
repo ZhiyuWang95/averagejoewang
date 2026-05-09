@@ -1,11 +1,13 @@
 export interface JobTeam {
   name: string;
+  url?: string;
   bullets: string[];
 }
 
 export interface JobEntry {
   id: string;
   company: string;
+  companyUrl?: string;
   role: string;
   dateRange: string;
   logoUrl: string;
@@ -15,6 +17,7 @@ export interface JobEntry {
 export interface School {
   id: string;
   name: string;
+  url?: string;
   location: string;
   logoUrl: string;
   dateRange: string;
@@ -47,6 +50,14 @@ export interface Book {
   notes?: string;
   reviewUrl?: string;
   dateAdded: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  issued: string;
+  expires?: string;
+  url?: string;
 }
 
 export interface Photo {
